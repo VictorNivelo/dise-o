@@ -1,0 +1,323 @@
+:root {
+    --primario: #007bff;
+    --secundario: #6c757d;
+
+    --crear: #28a745;
+    --eliminar: #dc3545;
+    --actualizar: #ffc107;
+    --cancelar: #6c757d;
+
+    --mostrar: #17a2b8;
+    --ordenar: #007bff;
+    --buscar: #007bff;
+
+    --exito: #28a745;
+    --peligro: #dc3545;
+    --advertencia: #ffc107;
+    --informacion: #17a2b8;
+
+    --claro: #f8f9fa;
+    --oscuro: #343a40;
+    --enlace: #007bff;
+    --cargar: #395a7e;
+
+    --blanco: white;
+    --negro: black;
+    --gris: gray;
+    --amarillo: yellow;
+    --azul: blue;
+    --rojo: red;
+    --verde: green;
+
+    --cafe: #503737;
+    --morado: #6f42c1;
+    --naranja: #fd7e14;
+
+
+    /* claros */
+
+    --primario-claro: #66b0ff;
+    --secundario-claro: #9ba5ae;
+
+    --crear-claro: #5dd879;
+    --eliminar-claro: #e77681;
+    --actualizar-claro: #ffdb4d;
+    --cancelar-claro: #9ba5ae;
+
+    --mostrar-claro: #4dd4e9;
+    --ordenar-claro: #66b0ff;
+    --buscar-claro: #66b0ff;
+
+    --exito-claro: #5dd879;
+    --peligro-claro: #e77681;
+    --advertencia-claro: #ffdb4d;
+    --informacion-claro: #4dd4e9;
+
+    --claro-claro: #ffffff;
+    --oscuro-claro: #6c757d;
+    --enlace-claro: #66b0ff;
+
+    --blanco-claro: #ffffff;
+    --negro-claro: #4d4d4d;
+    --gris-claro: #b3b3b3;
+    --amarillo-claro: #fff066;
+    --azul-claro: #66b0ff;
+    --rojo-claro: #ff6666;
+    --verde-claro: #66ff66;
+
+    --cafe-claro: #806666;
+    --morado-claro: #9d75db;
+    --naranja-claro: #ffa366;
+
+    /* oscuros */
+
+    --primario-oscuro: #004c99;
+    --secundario-oscuro: #40464d;
+
+    --crear-oscuro: #19642a;
+    --eliminar-oscuro: #991f2d;
+    --actualizar-oscuro: #cc9900;
+    --cancelar-oscuro: #40464d;
+
+    --mostrar-oscuro: #0f6674;
+    --ordenar-oscuro: #004c99;
+    --buscar-oscuro: #004c99;
+
+    --exito-oscuro: #19642a;
+    --peligro-oscuro: #991f2d;
+    --advertencia-oscuro: #cc9900;
+    --informacion-oscuro: #0f6674;
+
+    --claro-oscuro: #d9dde0;
+    --oscuro-oscuro: #1a1d20;
+    --enlace-oscuro: #004c99;
+
+    --blanco-oscuro: #e6e6e6;
+    --negro-oscuro: #000000;
+    --gris-oscuro: #404040;
+
+    --amarillo-oscuro: #cccc00;
+    --azul-oscuro: #004c99;
+    --rojo-oscuro: #cc0000;
+    --verde-oscuro: #006600;
+
+    --cafe-oscuro: #332424;
+    --morado-oscuro: #4e2a80;
+    --naranja-oscuro: #cc5200;
+
+    /* fondos */
+
+    --beige: #f5f5dc;
+    --menta: #98ff98;
+    --melocoton: #ffdab9;
+    --fondo: #c1bb9d;
+
+    /* especiales */
+
+    --transparente: transparent;
+
+    --letra-familia: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--negro);
+}
+
+body.oscuro {
+    background-color: var(--negro);
+}
+
+.contenedor {
+    background-color: var(--gris-claro);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+.contenedor.oscuro {
+    background-color: var(--negro);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+/* botones */
+
+.btn {
+    font-family: var(--letra-familia);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    /* border: 1px solid var(--gris-claro); */
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: translateY(0px);
+}
+
+.btn-primario {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.btn-segundario {
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
+.btn-crear {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+.btn-eliminar {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+.btn-actualizar {
+    background-color: var(--amarillo);
+    color: var(--blanco);
+}
+
+.btn-cancelar {
+    background-color: var(--cafe);
+    color: var(--blanco);
+}
+
+.btn-mostrar {
+    background-color: var(--menta);
+    color: var(--blanco);
+}
+
+.btn-ordenar {
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+}
+
+.btn-buscar {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+}
+
+.btn-exito {
+    background-color: var(--verde-claro);
+    color: var(--blanco);
+}
+
+.btn-peligro {
+    background-color: var(--rojo-oscuro);
+    color: var(--blanco);
+}
+
+.btn-advertencia {
+    background-color: var(--amarillo-claro);
+    color: var(--blanco);
+}
+
+.btn-informacion {
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+}
+
+.btn-claro {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+.btn-oscuro {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.btn-enlace {
+    background-color: var(--transparente);
+    color: var(--negro);
+}
+
+.btn-cargar {
+    background-color: var(--cargar);
+    color: var(--blanco);
+}
+
+/* entradas */
+
+input,
+select,
+textarea {
+    font-family: var(--letra-familia);
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid var(--gris-claro);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="email"],
+input[type="password"],
+input[type="range"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="month"],
+input[type="week"],
+input[type="datetime-local"],
+input[type="hidden"],
+select,
+textarea {
+    width: 200px;
+}
+
+input[type="file"] {
+    width: 250px;
+    padding: 0.3rem;
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 50px;
+    padding: 0.2rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
